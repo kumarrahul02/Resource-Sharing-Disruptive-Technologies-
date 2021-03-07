@@ -1,47 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+	
 <head>
+  <meta charset="utf-8" />
+  <meta name="author" content="www.frebsite.nl" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <title>HOME</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+    
+    <link href="assets/css/styles.css" rel="stylesheet">
+		
+		<!-- Custom Color Option -->
+		<link href="assets/css/colors.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    
+		
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="red-skin">
 
   <h2 id="hg1">Resourse Sharing <br> <span id="DT">Platform</span> </h2>
+    <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>
+		
+		
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+   
+        <div id="main-wrapper">
+		
+            <!-- ============================================================== -->
+            <!-- Top header  -->
+            <!-- ============================================================== -->
+            <!-- Start Navigation -->
+             <!-- Start Navigation -->
+			<div class="header dark-text header-transparent change-logo">
+				<div class="container">
+					<nav id="navigation" class="navigation navigation-landscape">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-spy="affix" data-offset-top="197">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/logo.jpeg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">ABOUT US</a>
-            </li>
-          </ul>
-          <a href="mailto:kumar@gmail.com" target="_blank">
-            <button type="button" class="btn btn-outline-light"> Email Us</button>
-          </a>
-        </div>
-      </div>
-    </nav>
+						
+						<div class="nav-header">
+							<a class="nav-brand static-logo" ><img src="assets/img/logo.jpeg" class="logo" alt="" /></a>
+							<a class="nav-brand fixed-logo" ><img src="assets/img/logo.jpeg" class="logo" alt="" /></a>
+							<div class="nav-toggle"></div>
+						</div>
+						
+						<div class="nav-menus-wrapper" style="transition-property: none;">
+							<ul class="nav-menu">
+							
+								<li class="active"><a href="index.html">Home<span class="submenu-indicator"></span></a>
+								
+								</li>
+								
+								<li><a href="aboutus.html"> About Us<span class="submenu-indicator"></span></a>
+									
+								</li>
+								
+							</ul>
+							
+							<ul class="nav-menu nav-menu-social align-to-right">
+								
+								<li class="login_click bg-red">
+									<a href="mailto:platformresourcesharing@gmail.com">Email Us</a>  
+								</li>
+								
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<!-- End Navigation -->
+			<div class="clearfix"></div>
+
+
 
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
+        <img src="./images/s2.png" class="d-block w-100 "  alt="...">
+      </div>
+      <div class="carousel-item">
         <img src="./images/slide2.jpg" class="d-block w-100 "  alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./images/slide4.jpg" class="d-block w-100 "  alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./images/slide3.jpg" class="d-block w-100" alt="...">
+        <img src="./images/s9.png" class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
@@ -54,23 +103,25 @@
     </button>
   </div>
 
+  <div class="space"></div>
+
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card">
           <img src="./images/python" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-text">PYTHON</h5>
-            <a href="#" class="btn btn-primary">LEARN MORE</a>
+            <h5 class="card-text" id="PY">PYTHON</h5>
+            <a href="python.html" class="btn btn-outline-info" >LEARN MORE</a>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-4">
         <div class="card">
-          <img src="./images/machine learning" class="card-img-top" alt="...">
+          <img src="./images/BIG DATA" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-text">MACHINE LEARNING</h5>
-            <a href="#" class="btn btn-primary">LEARN MORE</a>
+            <h5 class="card-text" id="BD">BIG DATA</h5>
+            <a href="big data.html" class="btn btn-outline-info">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -78,8 +129,8 @@
         <div class="card">
           <img src="./images/data science" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-text">DATA SCIENCE</h5>
-            <a href="#" class="btn btn-primary">LEARN MORE</a>
+            <h5 class="card-text" id="DS">DATA SCIENCE</h5>
+            <a href="data science.html" class="btn btn-outline-info">LEARN MORE</a>
           </div>
         </div>
       </div>
@@ -89,10 +140,19 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src="./images/BIG DATA" class="card-img-top" alt="...">
+              <img src="./images/statistics.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-text">BIG DATA</h5>
-                <a href="#" class="btn btn-primary">LEARN MORE</a>
+                <h5 class="card-text" id="ST">STATISTICS</h5>
+                <a href="statistics.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="./images/machine learning" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="ML">MACHINE LEARNING</h5>
+                <a href="machine learning.html" class="btn btn-outline-info">LEARN MORE</a>
               </div>
             </div>
           </div>
@@ -100,35 +160,276 @@
             <div class="card">
               <img src="./images/deep learning" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-text">DEEP LEARNING</h5>
-                <a href="#" class="btn btn-primary">LEARN MORE</a>
+                <h5 class="card-text" id="DL">DEEP LEARNING</h5>
+                <a href="Deep Learning.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/AI.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="AI">ARTIFICIAL INTELLIGENCE</h5>
+                <a href="artifical intelligence.html" class="btn btn-outline-info">LEARN MORE</a>
               </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src="./images/statistics.png" class="card-img-top" alt="...">
+              <img src="images/Time-Series-Analysis.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-text">STATISTICS</h5>
-                <a href="#" class="btn btn-primary">LEARN MORE</a>
+                <h5 class="card-text" id="TSF">TIME SERIES & FORCASTING</h5>
+                <a href="time series forecasting.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/data-engineering-dl-2020.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="DE">DATA ENGINEERING</h5>
+                <a href="data engineering.html" class="btn btn-outline-info">LEARN MORE</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-bottom navbar-dark bg-dark">
-        <div class="container">
-          <div class="row align-items-center">        
-            <div class="col-lg-6 col-md-12 ">
-              <p class="mb-0 color">Copyright © 2021 , RSP. All Rights Reserved.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/julia.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="jul">JULIA</h5>
+                <a href="julia.html" class="btn btn-outline-info" >LEARN MORE</a>
+              </div>
             </div>
-            
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/data mining.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text">DATA MINING</h5>
+                <a href="Data Mining.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/digital transformation.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text">DIGITAL TRANSFORMATION</h5>
+                <a href="digital Transformation.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/product management.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="PM">PRODUCT MANAGEMENT</h5>
+                <a href="Product management.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/corporate finance.jpg" class="card-img-top" alt="corporate finance image">
+              <div class="card-body">
+                <h5 class="card-text" id="CF">CORPORATE FINANCE</h5>
+                <a href="Corporate Finance.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/R-language.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="R">R-LANGUAGE</h5>
+                <a href="R-Language.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/computer vision.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="CV">COMPUTER VISION</h5>
+                <a href="computer vision.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/devOps.jpg" class="card-img-top" alt="Cooperate/corporate image">
+              <div class="card-body">
+                <h5 class="card-text" id="DEV">DEVOPS</h5>
+                <a href="DevOps.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/business analytics.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="BA">BUSINESS ANALYTICS</h5>
+                <a href="Business Analytics.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/NLP.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="NLP">NLP</h5>
+                <a href="NLP.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/career guidance.jpg" class="card-img-top" alt="Cooperate/corporate image">
+              <div class="card-body">
+                <h5 class="card-text" id="CG">CAREER GUIDANCE</h5>
+                <a href="Career Guidance.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/competition.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="COM">COMPETITION</h5>
+                <a href="Competition.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/computer science.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="CCS">CRASH COMPUTER SCIENCE</h5>
+                <a href="Crash Computer Science.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/database.png" class="card-img-top" alt="Cooperate/corporate image">
+              <div class="card-body">
+                <h5 class="card-text" id="DB">DATABASE</h5>
+                <a href="Database.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/IT Support.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="ITS">IT SUPPORT</h5>
+                <a href="IT Support.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/chatBot.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="CH">CHAT BOT</h5>
+                <a href="Chat Bot.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/story Telling.jpg" class="card-img-top" alt="Cooperate/corporate image">
+              <div class="card-body">
+                <h5 class="card-text" id="STO">STORY TELLING</h5>
+                <a href="story telling.html" class="btn btn-outline-info">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img src="images/deep Reinforcement.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-text" id="DR">DEEP REINFORCEMENT</h5>
+                <a href="Deep reinforcement.html" class="btn btn-outline-info" type="button">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- ============================ Footer Start ================================== -->
+      <footer class="dark-footer skin-dark-footer">
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row align-items-center">
+							
+							<div class="col-lg-6 col-md-6">
+								<p class="mb-0">Copyright © 2021 , RSP All Rights Reserved. Designd by <a href="https://www.linkedin.com/in/syed-annas-jawed-b46a651b8/" target="_blank">Syed Annas Jawed</a> and <a href="https://www.linkedin.com/in/rahul-599746186/" target="_blank">Rahul</a>.</p>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ============================ Footer End ================================== -->
+			
+			
+			
+			
+			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+			
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-</script>
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Wrapper -->
+		<!-- ============================================================== -->
+
+		<!-- ============================================================== -->
+		<!-- All Jquery -->
+		<!-- ============================================================== -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/select2.min.js"></script>
+		<script src="assets/js/slick.js"></script>
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/counterup.min.js"></script>
+		<script src="assets/js/custom.js"></script>
+		<!-- ============================================================== -->
+		<!-- This page plugins -->
+		<!-- ============================================================== -->
+
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<!-- Mirrored from codeminifier.com/learnup-1.1/learnup/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Sep 2020 06:37:44 GMT -->
 </html>
